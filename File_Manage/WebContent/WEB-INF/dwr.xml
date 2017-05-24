@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 1.0//EN" "http://www.getahead.ltd.uk/dwr/dwr1.dtd">
+<dwr>
+		<allow>
+	<convert converter="bean" match="com.xatu.file.bean.Teacher"></convert>
+		<create creator="new" javascript="TeacherService"><!-- 和javascript中的引用名称一致bf  -->
+			<param name="class" value="com.xatu.file.service.TeacherService"></param>
+		</create>
+	</allow>
+		<allow>
+	<convert converter="bean" match="com.xatu.file.bean.Student"></convert>
+		<create creator="new" javascript="StudentService"><!-- 和javascript中的引用名称一致bf  -->
+			<param name="class" value="com.xatu.file.service.StudentService"></param>
+		</create>
+	</allow>
+		<allow>
+	<convert converter="bean" match="com.xatu.file.bean.Manager"></convert>
+		<create creator="new" javascript="ManagerService"><!-- 和javascript中的引用名称一致bf  -->
+			<param name="class" value="com.xatu.file.service.ManagerService"></param>
+		</create>
+	</allow>
+		<allow>
+	<convert converter="bean" match="com.xatu.file.bean.Klfile"></convert>
+		<create creator="new" javascript="KlfileService"><!-- 和javascript中的引用名称一致bf  -->
+			<param name="class" value="com.xatu.file.service.KlFileService"></param>
+		</create>
+	</allow>
+</dwr>
